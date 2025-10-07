@@ -20,6 +20,25 @@
 
 ## English
 
+## 📊 Architecture Diagram
+
+```mermaid
+graph LR
+    A[Time Series Data] --> B[Detectors]
+    B --> C[Statistical]
+    B --> D[ML Models]
+    B --> E[Deep Learning]
+    C --> F[Anomaly Scores]
+    D --> F
+    E --> F
+    F --> G[Alerts]
+    
+    style A fill:#e1f5ff
+    style G fill:#c8e6c9
+    style B fill:#fff9c4
+```
+
+
 ## 🎯 Features
 
 - **Statistical Methods**: Statistical Methods (Z-score, IQR)
